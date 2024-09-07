@@ -37,38 +37,38 @@ const Footer = () => {
         <p>
           {" "}
           <i class="fa-solid fa-envelope"></i>
-          /sanskrit@iitr.ac.in
+          /r_bansal@me.iitr.ac.in
         </p>
 
         <br></br>
         <p>
           {" "}
           <i className="fa-brands fa-facebook" style={{ color: "#2f56f4" }} />
-          /Sanskrit Club IITR
+          Raman Bansal
         </p>
         <br></br>
         <p>
           <i class="fa-brands fa-instagram" style={{ color: "purple" }}></i>
-          @sanskrit_club
+          @7452raman
         </p>
         <br></br>
         <p>
           {" "}
           <i class="fa-brands fa-linkedin" style={{ color: "blue" }}></i>
-          Sanskrit Club IIT Roorkee
+          Raman Bansal
         </p>
         <br></br>
         <p>
           {" "}
           <i class="fa-brands fa-x-twitter"></i>
-          @Sanskrit_Club
+          @Raman
         </p>
         <br></br>
 
         <p>
           {" "}
           <i class="fa-brands fa-youtube" style={{ color: "red" }}></i>
-          @sanskritiitr
+          @r_bansal
         </p>
       </div>
     </div>
