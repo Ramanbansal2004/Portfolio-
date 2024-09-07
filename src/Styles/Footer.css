@@ -140,7 +140,7 @@
 @media(max-width:700px){
   .social-media{
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #ffacac;
     justify-content: center; 
     align-items: center;
     padding:2rem;
