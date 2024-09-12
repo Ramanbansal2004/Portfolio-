@@ -9,15 +9,6 @@ import IIT from '../assets/IIT.png';
 import SLogo from '../assets/SLogo.png';
 const Navbar=({toggle})=>{
   const [openMenu,setMenu]=useState('');
- const [navBg, setNavBg] = React.useState("black");
- const location = useLocation();
- React.useEffect(()=> {
-   if (window.location.pathname === "/") {
-      setNavBg("white");
-    } else {
-      setNavBg("#404040")
-    }
-  }, [location]);
   let navRef=useRef();
   useEffect(()=>{
     let handler=(e)=>{
@@ -32,7 +23,7 @@ const Navbar=({toggle})=>{
   })
   
   return(
-    <div className="navbar" ref={navRef}  style={{ backgroundColor: navBg }}>
+    <div className="navbar" ref={navRef}  style={{ backgroundColor: "white" }}>
       <div className="leftSide">
        <Link className="Logos" to="/">    <img  className="img_1" src   ={IIT}/>
           <div className="v"></div>
@@ -51,7 +42,7 @@ const Navbar=({toggle})=>{
         </div>
         
         <div className="vertical"></div>
-        <ul className="navlinks"  id={openMenu ? 'open' : 'close'} style={{ backgroundColor: navBg }}>
+        <ul className="navlinks"  id={openMenu ? 'open' : 'close'} style={{ backgroundColor: "white"}}>
           <li>
            <NavLink to="/home">Home</NavLink>
           </li>

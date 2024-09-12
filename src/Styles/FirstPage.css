@@ -7,11 +7,11 @@
 }
 .samarkan{
   font-family: 'samarkan';
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
 }
 .firstPage{
-  background-color: white;
+  background-color: rgb(205, 216, 219);
   position:relative;
   top:0rem;
  padding-top:3.5rem;
