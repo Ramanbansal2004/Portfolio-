@@ -4,23 +4,12 @@ import { NavLink ,useLocation} from 'react-router-dom'
 import "../Styles/Footer.css";
 
 const Footer = () => {
-  const [FootBg, setFootBg] = React.useState("pink");
-  const location = useLocation();
- React.useEffect(()=> {
-   if (window.location.pathname === "/") {
-      setFootBg("white");
-    } else {
-      setFootBg('#ffacac')
-    }
-  }, [location]);
-  
-  
   return (
-    <div style={{ backgroundColor: FootBg }} className="social-media">
+    <div style={{ backgroundColor: "#d2dff2" }} className="social-media">
       
       <div className="left">
         <div className="upper">
-        <NavLink to="/Team"><p>Meet the Team</p></NavLink>
+        <NavLink to="/Team"><p>About me</p></NavLink>
         </div>
        
         
@@ -36,7 +25,7 @@ const Footer = () => {
 
         <p>
           {" "}
-          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-solid fa-envelope"/>
           /r_bansal@me.iitr.ac.in
         </p>
 

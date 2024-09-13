@@ -3,7 +3,6 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar.js';
 import Footer from './components/Footer.js';
-import FirstPage from './Pages/FirstPage.js';
 import Home from './Pages/Home.js';
 import Login from './Pages/Login.js';
 import Event from './Pages/Event.js';
@@ -18,8 +17,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar/>
-        <Routes>
-        <Route path="/" element={<FirstPage/>}/>     
+        <Routes>   
         <Route path="/home" element={<Home/>}/>
         <Route path="/login" element={<Login/>}/>      
         <Route path="/events" element={<Event/>}/> 

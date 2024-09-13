@@ -25,15 +25,16 @@ const Navbar=({toggle})=>{
   return(
     <div className="navbar" ref={navRef}  style={{ backgroundColor: "white" }}>
       <div className="leftSide">
-       <Link className="Logos" to="/">    <img  className="img_1" src   ={IIT}/>
-          <div className="v"></div>
-         <img  className="img_2" src={SLogo}/>
-       </Link>
+       <div className="Logos">    
+        <img  className="img_1" src   ={IIT}/>
+        <div className="v"></div>
+        <img  className="img_2" src={SLogo}/>
+       </div>
       </div>
       <div className="rightSide">
         <div className="LogAndMenu">
           <div className="login">
-            <Link to="/login">Login</Link>
+            <Link to="/login">Login/SignUp</Link>
           </div>
           <div className="icon">
             <FontAwesomeIcon id={openMenu ? 'opened' : 'closed'} icon={ faAngleDoubleUp } size="xl" onClick={()=>{setMenu(!openMenu)}}/>
