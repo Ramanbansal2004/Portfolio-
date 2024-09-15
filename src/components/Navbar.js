@@ -45,7 +45,7 @@ const Navbar=({toggle})=>{
         <div className="vertical"></div>
         <ul className="navlinks"  id={openMenu ? 'open' : 'close'} style={{ backgroundColor: "white"}}>
           <li>
-           <NavLink to="/home">Home</NavLink>
+           <NavLink to="/">Home</NavLink>
           </li>
           <li>
            <NavLink to="/events">Events</NavLink>

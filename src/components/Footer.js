@@ -1,5 +1,5 @@
-import React ,{useState} from "react";
-import { NavLink ,useLocation} from 'react-router-dom'
+import React from "react";
+import { NavLink} from 'react-router-dom'
 
 import "../Styles/Footer.css";
 
