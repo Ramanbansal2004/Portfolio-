@@ -5,7 +5,7 @@ import "../Styles/Footer.css";
 
 const Footer = () => {
   return (
-    <div style={{ backgroundColor: "#d2dff2" }} className="social-media">
+    <div style={{ backgroundColor: "#f0f2f5" }} className="social-media">
       
       <div className="left">
         <div className="upper">

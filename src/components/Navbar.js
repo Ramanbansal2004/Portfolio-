@@ -5,8 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
 import { Link ,NavLink , useLocation} from 'react-router-dom'
-import IIT from '../assets/IIT.png';
-import SLogo from '../assets/SLogo.png';
+import logook from '../assets/Logok.png';
 const Navbar=({toggle})=>{
   const [openMenu,setMenu]=useState('');
   let navRef=useRef();
@@ -23,27 +22,12 @@ const Navbar=({toggle})=>{
   })
   
   return(
-    <div className="navbar" ref={navRef}  style={{ backgroundColor: "white" }}>
+    <div className="navbar" ref={navRef}  style={{ backgroundColor: "#f0f2f5" }}>
       <div className="leftSide">
        <div className="Logos">    
-        <img  className="img_1" src   ={IIT}/>
-        <div className="v"></div>
-        <img  className="img_2" src={SLogo}/>
+        <img  className="img_1" src   ={logook}/>
        </div>
-      </div>
-      <div className="rightSide">
-        <div className="LogAndMenu">
-          <div className="login">
-            <Link to="/login">Login/SignUp</Link>
-          </div>
-          <div className="icon">
-            <FontAwesomeIcon id={openMenu ? 'opened' : 'closed'} icon={ faAngleDoubleUp } size="xl" onClick={()=>{setMenu(!openMenu)}}/>
-            <FontAwesomeIcon id={openMenu ? 'closed' : 'opened'} icon={ faAngleDoubleDown } size="xl" onClick={()=>{setMenu(!openMenu)}}/>            
-          </div>
-        </div>
-        
-        <div className="vertical"></div>
-        <ul className="navlinks"  id={openMenu ? 'open' : 'close'} style={{ backgroundColor: "white"}}>
+       <ul className="navlinks">
           <li>
            <NavLink to="/">Home</NavLink>
           </li>
@@ -62,9 +46,14 @@ const Navbar=({toggle})=>{
           <li>
            <NavLink to="/resources">Resources</NavLink>  
           </li>
-   </ul>
-
-         
+        </ul>
+      </div>
+      <div className="rightSide">
+        <div className="LogAndMenu">
+          <div className="login">
+            <Link to="/login">Login/SignUp</Link>
+          </div>
+        </div>
       </div>      
     </div>
     )

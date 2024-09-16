@@ -9,46 +9,40 @@
   position:fixed;
   top:0;
   width: 100%;
-  height:4.5rem;
+  height:3.5rem;
   display:flex;
   justify-content: space-between;
-  border-bottom:1px solid rgb(255, 255, 255);
   align-items: center;
-  
+  margin-bottom: 2%;
 }
 .navbar .leftSide{
-  width:17%;
+  width:68%;
   height:100%;
   display:flex;
- margin-left: 1rem;
   align-items:center;
-  justify-content: center;
   background-color: inherit;
+}
+.navbar .leftSide .navlinks{
+  display: flex;
+  gap: 0.15rem;
 }
 .navbar .leftSide .Logos{
   background-color: inherit;
   height:100%;
-  width:100%;
+  width:10%;
   display:flex;
-  margin-left:-5.5vw;
   gap:0.9rem;
   align-items:center;
   justify-content: center;
 }
-.img_1 , .img_2{
+.img_1{
   background-color: inherit;
-  height:9vh;
-}
-.navbar .leftSide .Logos .v{
-  width:0.2rem; 
-  height:2.5rem;
-  border:0.2px solid #2a3052;
-  background-color: #2a3052;
+  height:7vh;
 }
 
 .navbar .rightSide{
   background-color: inherit;
-  width:85%;
+  width:20%;
   height:100%;
  font-family:'suse';
   display:flex;
@@ -67,7 +61,6 @@ a{
   color:rgb(0, 0, 0);
 }
 .navbar .rightSide .LogAndMenu{
-  background-color: inherit;
   height:4rem;
   display:flex;
   justify-content:center;
@@ -83,12 +76,6 @@ a{
 .topics a{
   display:contents;
   
-}
-.navbar .rightSide .vertical{
-   width:0.2rem; 
-  height:3.5rem;
-  border:0.2px solid black;
-  background-color: black;
 }
 .navbar .rightSide #open{
   background-color: inherit;

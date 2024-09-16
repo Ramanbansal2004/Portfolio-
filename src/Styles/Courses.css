@@ -59,7 +59,6 @@
 
 @media(max-width:700px){
   .courses{
-    background-image: url('../assets/Background_2.png');
     background-repeat:repeat-y;
     background-size: 100%;
   }
