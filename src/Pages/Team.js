@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Styles/Team.css";
-import SLogo from "../assets/SLogo.png";
+import SLogo from "../assets/Logok.png";
 import event1 from '../assets/event1.jpg';
 // Import more images as needed
 

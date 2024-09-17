@@ -1,46 +1,29 @@
 import React ,{useState} from 'react';
 import {Link} from 'react-router-dom';
 import '../Styles/Login.css';
+import logook from '../assets/Logok.png';
 const Login=()=>{
   const [addStyle,setStyle]=useState('member');
     
   
   return(
     <div className="Login">
-      <div className='login_container'>
-              {/**section1**/}
-      <div className="section_1">
-        <div className="top_btn" id={addStyle ? 'member' : 'login'}
-        onClick={()=>{setStyle('member')}}>
-          MEMBER
+      <div className="loginWrapper">
+          <div className="loginBox">
+            <div className="Logos">    
+              <img  className="img_1" src   ={logook}/>
+              <p>Name</p>
+            </div>
+            <input placeholder="Email" className="loginInput" name="username"/>
+            <input placeholder="Password" className="loginInput" name="password"/>
+            <button className="loginButton"><a className="link">Log In</a></button>
+            {/* <span className="loginForgot">Forgot Password?</span> */}
+            <div className="ForgotPassword">
+              <p>Forgot Password?</p>
+              <p>Sign Up</p>
+            </div>
+          </div>
         </div>
-        <div className="seperator">
-         </div>
-         <div className='top_btn'id={addStyle ? 'login' : 'member'}
-        onClick={()=>{setStyle(!addStyle)}}>
-           USER
-         </div>
-      </div>
-      {/**section2**/}
-      <div className='section_2'>
-        <form>
-          <div className="field">
-          <label className="labelfor"for="username">Username/Email</label>
-          <input  name="email" id="username" required="required" className="utextfield" />            
-          </div>
-          <div className='field'>
-          <label className="labelfor" for="password">Password</label>
-          <input type="password" name="password" id="password" required="required" className="utextfield" />            
-          </div>
-          <div className="setAccount">
-            <p >Don't have an account? <Link to ="/signup">SignUp</Link></p>
-          </div>
-      <input type="submit" name="commit" value="LOGIN" className="submit_button" data-disable-with="LOGIN" />
-
-        </form>
-      </div>
-      </div>
-
     </div>
     )
 }

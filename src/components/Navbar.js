@@ -50,7 +50,7 @@ const Navbar=({toggle})=>{
       </div>
       <div className="rightSide">
         <div className="LogAndMenu">
-          <div className="login">
+          <div>
             <Link to="/login">Login/SignUp</Link>
           </div>
         </div>
