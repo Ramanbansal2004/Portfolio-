@@ -12,7 +12,7 @@ const Login=()=>{
           <div className="loginBox">
             <div className="Logos">    
               <img  className="img_1" src   ={logook}/>
-              <p>Name</p>
+              <p className="Name">Easy Buy</p>
             </div>
             <input placeholder="Email" className="loginInput" name="username"/>
             <input placeholder="Password" className="loginInput" name="password"/>

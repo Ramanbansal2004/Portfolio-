@@ -15,6 +15,7 @@
   height: 70vh;
   width: 25vw;
   padding: 2vw;
+  border-radius: 0.3rem;
 }
 .Login .loginWrapper .loginBox{
   display: flex;
@@ -28,11 +29,20 @@
   align-items: center;
   font-family: suse;
   margin-bottom: 2.5rem;
+  gap: 0.5rem;
+}
+.Login .loginWrapper .loginBox .Logos .img_1{
+  height: 5rem;
+}
+.Login .loginWrapper .loginBox .Logos .Name{
+  font-size: 1.4rem;
 }
 .Login .loginWrapper .loginBox .loginInput{
   height: 2.5rem;
   width: 20rem;
   padding: 0.5rem;
+  border-radius: 0.3rem;
+  border-style: none;
 }
 
 .Login .loginWrapper .loginBox .loginButton{
