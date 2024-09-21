@@ -20,7 +20,7 @@ const Login=()=>{
             {/* <span className="loginForgot">Forgot Password?</span> */}
             <div className="ForgotPassword">
               <p>Forgot Password?</p>
-              <p>Sign Up</p>
+              <Link to="/signup"><p>Sign Up</p></Link>
             </div>
           </div>
         </div>

@@ -1,9 +1,6 @@
 import React,{ useState , useEffect ,useRef } from 'react';
 import '../Styles/Navbar.css';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
-import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
 import { Link ,NavLink , useLocation} from 'react-router-dom'
 import logook from '../assets/Logok.png';
 const Navbar=({toggle})=>{
@@ -36,15 +33,6 @@ const Navbar=({toggle})=>{
           </li>
           <li>
            <NavLink to="/learningSanskrit">Learning Sanskrit</NavLink>
-          </li>
-          <li>
-           <NavLink to="/courses">Courses</NavLink>
-          </li>
-          <li>
-           <NavLink to="/shaastraSetu">Shaastra Setu</NavLink>
-          </li>
-          <li>
-           <NavLink to="/resources">Resources</NavLink>  
           </li>
         </ul>
       </div>

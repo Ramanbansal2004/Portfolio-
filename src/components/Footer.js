@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink} from 'react-router-dom'
-
+import { Link} from 'react-router-dom'
 import "../Styles/Footer.css";
 
 const Footer = () => {
@@ -15,18 +15,16 @@ const Footer = () => {
         
       </div>
       <div className="right">
-        <h6> GET IN TOUCH</h6>
+        <h4> GET IN TOUCH</h4>
 
         <div className="Under-two">
         </div>
         <br></br>
         <div className="icons">
-          <i class="fa-solid fa-envelope"/>
-          <i className="fa-brands fa-facebook" style={{ color: "#2f56f4" }} />
-          <i class="fa-brands fa-instagram" style={{ color: "purple" }}></i>
-          <i class="fa-brands fa-linkedin" style={{ color: "blue" }}></i>
-          <i class="fa-brands fa-x-twitter"></i>
-          <i class="fa-brands fa-youtube" style={{ color: "red" }}></i>
+          <Link to="https://www.facebook.com/raman.bansal.54738943"><i className="fa-brands fa-facebook" style={{ color: "#2f56f4" }} /></Link>
+          <Link to="https://www.instagram.com/7452raman/"><i class="fa-brands fa-instagram" style={{ color: "purple" }}></i></Link>
+          <Link to="https://x.com/Raman96738889"><i class="fa-brands fa-x-twitter"></i></Link>
+          <Link to="https://youtube.com/channel/UCJJA1y9zKal0MRCULtO_YFw"><i class="fa-brands fa-youtube" style={{ color: "red" }}></i></Link>
         </div>
       </div>
     </div>

@@ -22,9 +22,6 @@ function App() {
         <Route path="/login" element={<Login/>}/>      
         <Route path="/events" element={<Event/>}/> 
         <Route path="/learningSanskrit" element={<LearningSanskrit/>}/>
-        <Route path="courses" element={<Courses/>}/> 
-        <Route path="/ShaastraSetu" element={<SaastraSetu/>}/> 
-        <Route path="/resources" element={<Resources/>}/>  
         <Route path="/Team" element={<Team/>}/>
          <Route path="/signup" element={<SignUp/>}/>
         
