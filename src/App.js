@@ -7,9 +7,6 @@ import Home from './Pages/Home.js';
 import Login from './Pages/Login.js';
 import Event from './Pages/Event.js';
 import LearningSanskrit from './Pages/LearningSanskrit.js';
-import Courses from './Pages/Courses.js';
-import Resources from './Pages/Resources.js';
-import SaastraSetu from  './Pages/SaastraSetu.js';
 import SignUp from  './components/SignUp.js';
 import Team from './Pages/Team.js';
 function App() {

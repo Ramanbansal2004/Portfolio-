@@ -1,32 +1,24 @@
 import React from 'react';
 import '../Styles/SignUp.css';
-
+import logook from '../assets/Logok.png';
+import {Link} from 'react-router-dom';
 const SignUp=()=>{
   return(
-    <div className="sign-up" >
-      <div className="sign-up_container">
-      <div className="heading">SIGN UP AS NEW USER</div>
-      <div className="content">
-        <form>
-          <div className="field">
-            <label   for ="name">Name</label>
-            <input type="text" name="name" id="name" required="required" className="utextfield" />
+    <div className="Login">
+      <div className="loginWrapper">
+          <div className="loginBox">
+            <div className="Logos">    
+              <img  className="img_1" src   ={logook}/>
+              <p className="Name">Easy Buy</p>
+            </div>
+            <input placeholder="Name" className="loginInput" name="username"/>
+            <input placeholder="Email" className="loginInput" name="username"/>
+            <input placeholder="Password" className="loginInput" name="password"/>
+            <input placeholder="Confirm Password" className="loginInput" name="password"/>
+            <button className="loginButton"><a className="link">Sign Up</a></button>
+            {/* <span className="loginForgot">Forgot Password?</span> */}
           </div>
-          <div className="field">
-             <label for ="email">Email</label>    
-            <input type="email" name="email" id="email" required="required" className="utextfield" />          </div>
-          <div className="field">
-            <label for ="password"> Set Password</label>
-            <input type="password" name="password" id="password" required="required" className="utextfield" />
-          </div>    
-        
-          <input type="submit" name="commit" value="SUBMIT" className="submit_button" data-disable-with="SUBMIT" />
-        </form>
-      </div>        
-      </div>
-
-      
-      
+        </div>
     </div>
     )
 }
