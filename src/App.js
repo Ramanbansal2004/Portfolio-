@@ -6,7 +6,6 @@ import Footer from './components/Footer.js';
 import Home from './Pages/Home.js';
 import Login from './Pages/Login.js';
 import Event from './Pages/Event.js';
-import LearningSanskrit from './Pages/LearningSanskrit.js';
 import SignUp from  './components/SignUp.js';
 import Team from './Pages/Team.js';
 function App() {
@@ -18,10 +17,8 @@ function App() {
         <Route exact path="/" element={<Home/>}/>
         <Route path="/login" element={<Login/>}/>      
         <Route path="/events" element={<Event/>}/> 
-        <Route path="/learningSanskrit" element={<LearningSanskrit/>}/>
         <Route path="/Team" element={<Team/>}/>
-         <Route path="/signup" element={<SignUp/>}/>
-        
+        <Route path="/SignUp" element={<SignUp/>}/>
         
         </Routes>
         <Footer/>         

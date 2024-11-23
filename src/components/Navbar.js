@@ -20,29 +20,11 @@ const Navbar=({toggle})=>{
   
   return(
     <div className="navbar" ref={navRef}  style={{ backgroundColor: "#f0f2f5" }}>
-      <div className="leftSide">
-       <div className="Logos">    
-        <img  className="img_1" src   ={logook}/>
-       </div>
-       <ul className="navlinks">
-          <li>
-           <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-           <NavLink to="/events">Events</NavLink>
-          </li>
-          <li>
-           <NavLink to="/learningSanskrit">Learning Sanskrit</NavLink>
-          </li>
-        </ul>
+      <NavLink to="/"><img  className="img_1" src   ={logook}/></NavLink>
+      <div className="Search">
+        <input type="text" className="searchStyle" name="search" placeholder='Search..'/>
       </div>
-      <div className="rightSide">
-        <div className="LogAndMenu">
-          <div>
-            <Link to="/login">Login/SignUp</Link>
-          </div>
-        </div>
-      </div>      
+      <Link to="/login">Login/SignUp</Link>
     </div>
     )
 }

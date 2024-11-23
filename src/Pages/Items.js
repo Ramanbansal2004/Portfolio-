@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Styles/LearningSanskrit.css";
+import "../Styles/Items.css";
 import vibhooshita from "../assets/vibhooshita.ogg";
 
 
@@ -32,7 +32,7 @@ const shlokas = [
   }
 ];
 
-const LearningSanskrit = () => {
+const Items = () => {
   const [expandedId, setExpandedId] = useState(null);
 
   const toggleExpand = (id) => {
@@ -84,4 +84,4 @@ const LearningSanskrit = () => {
   );
 };
 
-export default LearningSanskrit;
+export default Items;
