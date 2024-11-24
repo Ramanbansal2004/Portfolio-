@@ -1,6 +1,11 @@
+@font-face{
+  font-family:'suse';
+  src:local('suse'), url("../Fonts/SUSE-ExtraBold.ttf") ;
+}
 .Home{
-  padding-top:8rem;
+  margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  font-family: 'suse';
+  padding: 1rem;
 }

@@ -16,6 +16,7 @@
   padding: 1.5rem;
   margin-bottom: 2%;
   flex-shrink: 1;
+  background-color: #f0f2f5;
 }
 .img_1{
   background-color: inherit;
@@ -33,12 +34,13 @@
   padding: 1rem;
   font-size: large;
 }
-.navbar .leftSide{
-  width:68%;
-  height:100%;
-  display:flex;
-  align-items:center;
-  background-color: inherit;
+.navbar .right{
+  display: flex;
+  width: 10vw;
+}
+.navbar .right .gap{
+  display: flex;
+  margin: 0.5rem;
 }
 .navbar .leftSide .navlinks{
   display: flex;
